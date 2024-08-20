@@ -8,15 +8,13 @@
 import Foundation
 import AppIntents
 
-//@AssistantIntent(schema: .system.search)
-struct MangoesSearchIntent: ShowInAppSearchResultsIntent {
-    static var title: LocalizedStringResource = "Search Mangoes"
+@AssistantIntent(schema: .system.search)
+struct MangoesSearchIntent: AppIntent {
     static var searchScopes: [StringSearchScope] = [.general]
 
     @Dependency
     private var router: AppRouter
 
-    @Parameter(title: "Search", requestValueDialog: "Search Mangoes")
     var criteria: StringSearchCriteria
 
     @MainActor
