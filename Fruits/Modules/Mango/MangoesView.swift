@@ -9,11 +9,10 @@ import Foundation
 import SwiftUI
 
 struct MangoesView: View {
-    @State var repository: MangoesRepository
-    @Environment(AppRouter.self) private var router
+    @ObservedObject var repository: MangoesRepository
+    @EnvironmentObject private var router: AppRouter
 
     var body: some View {
-        @Bindable var router = router
         NavigationStack(path: $router.mangoesRouter) {
             List(searchResults) { mango in
                 NavigationLink(value: MangoesRouter.detail(mango)) {
@@ -51,7 +50,7 @@ struct MangoesView: View {
 
 #Preview {
     MangoesView(repository: MangoesRepository())
-        .environment(AppRouter())
+        .environmentObject(AppRouter())
 }
 
 #endif

@@ -6,22 +6,11 @@
 //
 
 import Foundation
-import AppIntents
 
 enum RootTab: String, CaseIterable, Identifiable {
     case apples, bananas, mangoes
 
     var id: RootTab { self }
-}
-
-extension RootTab: AppEnum {
-    static var typeDisplayRepresentation: TypeDisplayRepresentation = "Tab"
-
-    static var caseDisplayRepresentations: [RootTab : DisplayRepresentation] = [
-        .apples:  .init(stringLiteral: "Apples"),
-        .bananas: .init(stringLiteral: "Bananas"),
-        .mangoes: .init(stringLiteral: "Mangoes")
-    ]
 }
 
 extension RootTab {

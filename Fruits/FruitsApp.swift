@@ -27,22 +27,15 @@ struct FruitsApp: App {
 
         let bananasRepository = BananasRepository()
         self.bananasRepository = bananasRepository
-
-        AppDependencyManager.shared.add(dependency: router)
-        AppDependencyManager.shared.add(dependency: applesRepository)
-        AppDependencyManager.shared.add(dependency: mangoesRepository)
-        AppDependencyManager.shared.add(dependency: bananasRepository)
-
-        Shortcuts.updateAppShortcutParameters()
     }
 
     var body: some Scene {
         WindowGroup {
             RootContentView()
-                .environment(router)
-                .environment(applesRepository)
-                .environment(mangoesRepository)
-                .environment(bananasRepository)
+                .environmentObject(router)
+                .environmentObject(applesRepository)
+                .environmentObject(mangoesRepository)
+                .environmentObject(bananasRepository)
         }
     }
 }

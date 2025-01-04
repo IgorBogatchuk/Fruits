@@ -6,11 +6,11 @@
 //
 
 import Foundation
-import Observation
+import Combine
 
 @MainActor
-@Observable final class MangoesRepository {
-    var mangoes: [Mango] = []
+final class MangoesRepository: ObservableObject {
+    @Published var mangoes: [Mango] = []
 
     @discardableResult
     func fetchMangoes() async throws -> [Mango] {

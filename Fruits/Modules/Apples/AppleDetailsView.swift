@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct AppleDetailsView: View {
-    @Environment(AppRouter.self) var router
+    @EnvironmentObject var router: AppRouter
 
     let name: String
 

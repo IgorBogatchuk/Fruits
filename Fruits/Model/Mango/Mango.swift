@@ -6,19 +6,8 @@
 //
 
 import Foundation
-import AppIntents
 
 struct Mango: Identifiable, Hashable {
     let name: String
     let id = UUID()
-}
-
-extension Mango: AppEntity {
-    static var defaultQuery = MangoesQuery()
-
-    static var typeDisplayRepresentation: TypeDisplayRepresentation = .init(stringLiteral: "Mango")
-
-    var displayRepresentation: DisplayRepresentation {
-        .init(stringLiteral: name)
-    }
 }

@@ -6,20 +6,20 @@
 //
 
 import Foundation
-import Observation
+import Combine
 import SwiftUI
 
-@Observable class SearchState {
+class SearchState {
     var isSearching: Bool = false
     var searchText: String = ""
 }
 
-@MainActor
-@Observable class AppRouter {
-    var selectedTab: RootTab = .apples
-    var applesRouter: [ApplesRoute] = []
-    var bananasRouter: [BananasRoute] = []
-    
-    var mangoesRouter: [MangoesRouter] = []
-    var mangoesSearchState = SearchState()
+
+@MainActor class AppRouter: ObservableObject {
+    @Published var selectedTab: RootTab = .apples
+    @Published var applesRouter: [ApplesRoute] = []
+    @Published var bananasRouter: [BananasRoute] = []
+
+    @Published var mangoesRouter: [MangoesRouter] = []
+    @Published var mangoesSearchState = SearchState()
 }

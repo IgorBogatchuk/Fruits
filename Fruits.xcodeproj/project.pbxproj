@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1022AE412C63829F00564F5E /* OpenBananasTabIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022AE402C63829F00564F5E /* OpenBananasTabIntent.swift */; };
-		1022AE442C638ABD00564F5E /* Shortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1022AE432C638AAE00564F5E /* Shortcuts.swift */; };
 		1077BA712BDBA23300479F95 /* AppleDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1077BA702BDBA23300479F95 /* AppleDetailsView.swift */; };
 		1077BA732BDBA31D00479F95 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1077BA722BDBA31D00479F95 /* AppRouter.swift */; };
 		1077BA762BDBA35A00479F95 /* RootTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1077BA752BDBA35A00479F95 /* RootTab.swift */; };
@@ -25,19 +23,13 @@
 		10A723C02BDA61E1006440D9 /* MangoesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A723BF2BDA61E1006440D9 /* MangoesView.swift */; };
 		10A723C72BDA658A006440D9 /* BananasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A723C62BDA658A006440D9 /* BananasView.swift */; };
 		10A723C92BDA6609006440D9 /* ApplesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A723C82BDA6609006440D9 /* ApplesView.swift */; };
-		10CD7D112C63C0FF00644091 /* OpenTabIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CD7D102C63C0FF00644091 /* OpenTabIntent.swift */; };
-		10CD7D132C660C5B00644091 /* OpenMangoDetailsIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CD7D122C660C5300644091 /* OpenMangoDetailsIntent.swift */; };
 		10CD7D152C660D4100644091 /* MangoesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CD7D142C660D3A00644091 /* MangoesRouter.swift */; };
-		10CD7D172C6B725C00644091 /* MangoesSearchIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CD7D162C6B725400644091 /* MangoesSearchIntent.swift */; };
 		10CD7D192C6C9A7500644091 /* Mango.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CD7D182C6C9A6F00644091 /* Mango.swift */; };
-		10CD7D1B2C6C9C0E00644091 /* MangoesQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CD7D1A2C6C9C0C00644091 /* MangoesQuery.swift */; };
 		10CD7D202C6C9C9100644091 /* Apple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CD7D1F2C6C9C8F00644091 /* Apple.swift */; };
 		10CD7D222C6C9C9E00644091 /* Banana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CD7D212C6C9C9C00644091 /* Banana.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1022AE402C63829F00564F5E /* OpenBananasTabIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBananasTabIntent.swift; sourceTree = "<group>"; };
-		1022AE432C638AAE00564F5E /* Shortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shortcuts.swift; sourceTree = "<group>"; };
 		1077BA702BDBA23300479F95 /* AppleDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleDetailsView.swift; sourceTree = "<group>"; };
 		1077BA722BDBA31D00479F95 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		1077BA752BDBA35A00479F95 /* RootTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTab.swift; sourceTree = "<group>"; };
@@ -55,12 +47,8 @@
 		10A723BF2BDA61E1006440D9 /* MangoesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoesView.swift; sourceTree = "<group>"; };
 		10A723C62BDA658A006440D9 /* BananasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BananasView.swift; sourceTree = "<group>"; };
 		10A723C82BDA6609006440D9 /* ApplesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplesView.swift; sourceTree = "<group>"; };
-		10CD7D102C63C0FF00644091 /* OpenTabIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenTabIntent.swift; sourceTree = "<group>"; };
-		10CD7D122C660C5300644091 /* OpenMangoDetailsIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMangoDetailsIntent.swift; sourceTree = "<group>"; };
 		10CD7D142C660D3A00644091 /* MangoesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoesRouter.swift; sourceTree = "<group>"; };
-		10CD7D162C6B725400644091 /* MangoesSearchIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoesSearchIntent.swift; sourceTree = "<group>"; };
 		10CD7D182C6C9A6F00644091 /* Mango.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mango.swift; sourceTree = "<group>"; };
-		10CD7D1A2C6C9C0C00644091 /* MangoesQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangoesQuery.swift; sourceTree = "<group>"; };
 		10CD7D1F2C6C9C8F00644091 /* Apple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple.swift; sourceTree = "<group>"; };
 		10CD7D212C6C9C9C00644091 /* Banana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banana.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,25 +64,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1022AE3D2C63824400564F5E /* Intents */ = {
-			isa = PBXGroup;
-			children = (
-				10CD7D162C6B725400644091 /* MangoesSearchIntent.swift */,
-				10CD7D122C660C5300644091 /* OpenMangoDetailsIntent.swift */,
-				1022AE402C63829F00564F5E /* OpenBananasTabIntent.swift */,
-				10CD7D102C63C0FF00644091 /* OpenTabIntent.swift */,
-			);
-			path = Intents;
-			sourceTree = "<group>";
-		};
-		1022AE422C638A4300564F5E /* Shortcuts */ = {
-			isa = PBXGroup;
-			children = (
-				1022AE432C638AAE00564F5E /* Shortcuts.swift */,
-			);
-			path = Shortcuts;
-			sourceTree = "<group>";
-		};
 		1077BA742BDBA34D00479F95 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,8 +95,6 @@
 		10A723A92BDA5A42006440D9 /* Fruits */ = {
 			isa = PBXGroup;
 			children = (
-				1022AE422C638A4300564F5E /* Shortcuts */,
-				1022AE3D2C63824400564F5E /* Intents */,
 				1077BA742BDBA34D00479F95 /* Router */,
 				10A723BA2BDA5B77006440D9 /* Model */,
 				10CD7D232C6C9DBE00644091 /* Modules */,
@@ -187,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				10CD7D182C6C9A6F00644091 /* Mango.swift */,
-				10CD7D1A2C6C9C0C00644091 /* MangoesQuery.swift */,
 				10A723BD2BDA5C7B006440D9 /* MangoesRepository.swift */,
 			);
 			path = Mango;
@@ -292,11 +258,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				10A723BC2BDA5BA7006440D9 /* ApplesRepository.swift in Sources */,
-				10CD7D112C63C0FF00644091 /* OpenTabIntent.swift in Sources */,
-				10CD7D132C660C5B00644091 /* OpenMangoDetailsIntent.swift in Sources */,
 				10A723C72BDA658A006440D9 /* BananasView.swift in Sources */,
 				1098026D2BDC050100D378E1 /* BananasRouter.swift in Sources */,
-				1022AE412C63829F00564F5E /* OpenBananasTabIntent.swift in Sources */,
 				10CD7D202C6C9C9100644091 /* Apple.swift in Sources */,
 				10A723AD2BDA5A42006440D9 /* RootContentView.swift in Sources */,
 				1077BA762BDBA35A00479F95 /* RootTab.swift in Sources */,
@@ -305,11 +268,8 @@
 				10A723C92BDA6609006440D9 /* ApplesView.swift in Sources */,
 				10A723BE2BDA5C7B006440D9 /* MangoesRepository.swift in Sources */,
 				10CD7D192C6C9A7500644091 /* Mango.swift in Sources */,
-				10CD7D1B2C6C9C0E00644091 /* MangoesQuery.swift in Sources */,
-				1022AE442C638ABD00564F5E /* Shortcuts.swift in Sources */,
 				10CD7D222C6C9C9E00644091 /* Banana.swift in Sources */,
 				10A723AB2BDA5A42006440D9 /* FruitsApp.swift in Sources */,
-				10CD7D172C6B725C00644091 /* MangoesSearchIntent.swift in Sources */,
 				10A723B92BDA5AB6006440D9 /* BananasRepository.swift in Sources */,
 				1098026F2BDC055A00D378E1 /* ApplesRoute.swift in Sources */,
 				1077BA712BDBA23300479F95 /* AppleDetailsView.swift in Sources */,
@@ -456,7 +416,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -486,7 +446,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

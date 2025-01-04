@@ -6,10 +6,10 @@
 //
 
 import Foundation
-import Observation
+import Combine
 
-@Observable final class BananasRepository {
-    var bananas: [Banana] = []
+final class BananasRepository: ObservableObject {
+    @Published var bananas: [Banana] = []
 
     @MainActor
     func fetchBananas() async throws {

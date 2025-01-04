@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct RootContentView: View {
-    @Environment(AppRouter.self) private var router
-    @Environment(ApplesRepository.self) private var apples
-    @Environment(MangoesRepository.self) private var mangoes
-    @Environment(BananasRepository.self) private var bananas
+    @EnvironmentObject private var router: AppRouter
+    @EnvironmentObject private var apples: ApplesRepository
+    @EnvironmentObject private var mangoes: MangoesRepository
+    @EnvironmentObject private var bananas: BananasRepository
 
     var body: some View {
-        @Bindable var router = router
         TabView(selection: $router.selectedTab) {
             ForEach(RootTab.allCases) { tab in
                 viewForTab(tab)
@@ -42,10 +41,10 @@ struct RootContentView: View {
 
 #Preview {
     RootContentView()
-        .environment(AppRouter())
-        .environment(ApplesRepository())
-        .environment(MangoesRepository())
-        .environment(BananasRepository())
+        .environmentObject(AppRouter())
+        .environmentObject(ApplesRepository())
+        .environmentObject(MangoesRepository())
+        .environmentObject(BananasRepository())
 }
 
 #endif

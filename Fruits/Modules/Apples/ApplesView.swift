@@ -9,11 +9,10 @@ import Foundation
 import SwiftUI
 
 struct ApplesView: View {
-    @State var repository: ApplesRepository
-    @Environment(AppRouter.self) private var router
+    @ObservedObject var repository: ApplesRepository
+    @EnvironmentObject private var router: AppRouter
 
     var body: some View {
-        @Bindable var router = router
         NavigationStack(path: $router.applesRouter) {
             VStack {
                 List(repository.apples) { apple in
@@ -40,7 +39,7 @@ struct ApplesView: View {
 
 #Preview {
     ApplesView(repository: ApplesRepository())
-        .environment(AppRouter())
+        .environmentObject(AppRouter())
 }
 
 #endif

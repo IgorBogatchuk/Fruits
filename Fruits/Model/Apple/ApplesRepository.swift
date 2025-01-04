@@ -6,12 +6,12 @@
 //
 
 import Foundation
-import Observation
+import Combine
 
-@Observable final class ApplesRepository {
-    var apples: [Apple] = []
-    
-    @MainActor
+@MainActor
+final class ApplesRepository: ObservableObject {
+    @Published var apples: [Apple] = []
+
     func fetchApples() async throws {
         apples = [Apple(name: "Apple 1"),
                   Apple(name: "Apple 2"),
