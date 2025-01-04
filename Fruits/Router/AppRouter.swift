@@ -21,5 +21,4 @@ class SearchState {
     @Published var bananasRouter: [BananasRoute] = []
 
     @Published var mangoesRouter: [MangoesRouter] = []
-    @Published var mangoesSearchState = SearchState()
 }

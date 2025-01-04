@@ -14,7 +14,7 @@ struct MangoesView: View {
 
     var body: some View {
         NavigationStack(path: $router.mangoesRouter) {
-            List(searchResults) { mango in
+            List(repository.mangoes) { mango in
                 NavigationLink(value: MangoesRouter.detail(mango)) {
                     Text(mango.name)
                 }
@@ -29,19 +29,6 @@ struct MangoesView: View {
             .task {
                 _ = try? await repository.fetchMangoes()
             }
-        }
-        .searchable(text: $router.mangoesSearchState.searchText,
-                    isPresented: $router.mangoesSearchState.isSearching,
-                    prompt: NSLocalizedString("Search Mangoes", comment: ""))
-    }
-
-    private var searchResults: [Mango] {
-        let searchText = router.mangoesSearchState.searchText
-
-        if searchText.isEmpty {
-            return repository.mangoes
-        } else {
-            return repository.mangoes.filter { $0.name.contains(searchText) }
         }
     }
 }

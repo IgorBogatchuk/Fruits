@@ -34,13 +34,6 @@ struct BananaDetailsView: View {
             Button("New Banana") {
                 router.bananasRouter.append(.detail(Banana(name: "New banana")))
             }
-
-            Button("Search '3' in Mangoes") {
-                router.selectedTab = .mangoes
-                router.mangoesRouter.removeAll()
-                router.mangoesSearchState.isSearching = true
-                router.mangoesSearchState.searchText = "3"
-            }
         }
         .navigationTitle(name)
         .navigationBarTitleDisplayMode(.inline)
